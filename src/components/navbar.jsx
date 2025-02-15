@@ -19,7 +19,6 @@ export default function Navbar() {
             { name: "Home", path: "/" },
             { name: "Features", path: "/features" },
             { name: "How It Works", path: "/how-it-works" },
-            { name: "QA Results", path: "/qa-results" },
             { name: "Testimonials", path: "/testimonials" },
             { name: "FAQ", path: "/faq" },
           ].map((item, index) => (
@@ -61,7 +60,6 @@ export default function Navbar() {
               { name: "Home", path: "/" },
               { name: "Features", path: "/features" },
               { name: "How It Works", path: "/how-it-works" },
-              { name: "QA Results", path: "/qa-results" },
               { name: "Testimonials", path: "/testimonials" },
               { name: "FAQ", path: "/faq" },
             ].map((item, index) => (

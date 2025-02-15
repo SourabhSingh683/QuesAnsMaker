@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Upload } from "lucide-react";
 import { motion } from "framer-motion";
 import Navbar from "./navbar";
+import QAResults from "./qaResults"; // Import QAResults
 
 const HomePage = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -33,9 +34,9 @@ const HomePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-900 text-white relative">
       <Navbar />
-
+      
       <motion.main
         className="max-w-4xl mx-auto px-4 pt-20 text-center"
         initial={{ opacity: 0, y: 20 }}
@@ -136,6 +137,9 @@ const HomePage = () => {
             ))}
           </motion.div>
         )}
+
+        {/* QAResults Section - Display only when generatedQA is available */}
+        {generatedQA.length > 0 && <QAResults qaData={generatedQA} />}
       </motion.main>
     </div>
   );
