@@ -10,8 +10,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-16">
         {/* Logo */}
         <NavLink to="/" className="text-xl text-blue-500 font-bold">
-          QAPdf
-        </NavLink>
+  Ask<span className="text-orange-500">Verse</span>
+</NavLink>
+
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 text-sm">
